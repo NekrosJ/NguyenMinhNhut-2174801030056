@@ -1,0 +1,46 @@
+def sum(a, b):
+  """Hàm cộng hai số"""
+  return a + b
+
+def difference(a, b):
+  """Hàm trừ hai số"""
+  return a - b
+
+def product(a, b):
+  """Hàm nhân hai số"""
+  return a * b
+
+def quotient(a, b):
+  """Hàm chia hai số"""
+  return a / b
+
+def main():
+  """Hàm chính thực hiện các phép toán"""
+  # Lấy đầu vào từ người dùng
+  a = float(input("Nhập số thứ nhất: "))
+  b = float(input("Nhập số thứ hai: "))
+
+  # Hiển thị menu lựa chọn
+  print("Chọn phép toán:")
+  print("1. Cộng")
+  print("2. Trừ")
+  print("3. Nhân")
+  print("4. Chia")
+
+  # Lấy lựa chọn từ người dùng
+  choice = int(input("Nhập lựa chọn của bạn (1-4): "))
+
+  # Thực hiện phép toán dựa trên lựa chọn
+  if choice == 1:
+    print(f"{a} + {b} = {sum(a, b)}")
+  elif choice == 2:
+    print(f"{a} - {b} = {difference(a, b)}")
+  elif choice == 3:
+    print(f"{a} * {b} = {product(a, b)}")
+  elif choice == 4:
+    print(f"{a} / {b} = {quotient(a, b)}")
+  else:
+    print("Lựa chọn không hợp lệ.")
+
+if __name__ == "__main__":
+  main()
